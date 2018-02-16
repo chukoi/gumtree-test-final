@@ -1,0 +1,42 @@
+/**
+ * _content.scss
+ *
+ * @dateCreated 11/02/2018
+ * @author Dean Heffernan
+ */
+
+.content {
+  .content__container {
+    // ensure the content fits inside the panel
+    min-height: 150px;
+    // center content on smaller screens
+    text-align: center;
+    @media (min-width: 767px) {
+      .content__img {
+        // put image on the left of content on larger devices
+        float: left;
+        padding: 0 30px;
+      }
+    }
+    .content__img__container {
+      // on smaller devices center the content
+      text-align: center;
+    }
+    .content__img {
+      // set image look annd feel
+      height: 150px;
+      padding: 10px 30px;
+    }
+    .content__paragraph {
+      // ensure content fits
+      padding: 0 30px;
+      word-wrap: break-word;
+    }
+  }
+  @media (min-width: 767px) {
+    .content__container {
+      // fix positioning of content on larger screens.
+      text-align: left
+    }
+  }
+}

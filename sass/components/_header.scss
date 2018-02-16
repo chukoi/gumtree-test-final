@@ -1,0 +1,46 @@
+/**
+ * _header.scss
+ *
+ * @dateCreated 11/02/2018
+ * @author Dean Heffernan
+ */
+
+@import "../variables";
+
+.header {
+  // add linear gradient to header
+  background: linear-gradient(-90deg, #C7C7A5, #EAEAD0);
+  // add spacing around items
+  padding: 20px 0;
+  // centers items in header
+  display: inline-flex;
+  // ensure the header fits the main panel
+  width: 100%;
+  position: relative;
+  // Add the top round corners
+  border-radius: 10px 10px 0 0;
+  .header__title {
+    // set header text style and position
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 10px
+  }
+  .header__file {
+    // set file icon size and position
+    font-size: 22px;
+    margin-left: 30px;
+  }
+  .header__arrow {
+    // set toggle size and position
+    font-size: 28px;
+    position: absolute;
+    right: 30px !important;
+    // make sure the user knows the toggle is clickable
+    cursor: pointer;
+  }
+  .header__file,
+  .header__arrow {
+    // set the icons to the base colour
+    color: $main-colour;
+  }
+}

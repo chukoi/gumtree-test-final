@@ -1,0 +1,15 @@
+/**
+ * _app.scss
+ *
+ * @dateCreated 11/02/2018
+ * @author Dean Heffernan
+ */
+
+@import "../variables";
+
+body {
+  // set default styles
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+}

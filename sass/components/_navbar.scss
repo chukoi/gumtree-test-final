@@ -1,0 +1,67 @@
+/**
+ * _navbar.scss
+ *
+ * @dateCreated 11/02/2018
+ * @author Dean Heffernan
+ */
+
+@import "../variables";
+
+.navbar {
+  position: relative;
+  // Add line separators
+  border-top: 2px solid $border-colour;
+  border-bottom: 2px solid $border-colour;
+  // vertically align items.
+  line-height: 50px;
+  // make sure content fits.
+  min-height: 50px;
+  // center text on smaller screens.
+  text-align: center;
+  .navbar__arrow,
+  .navbar__text {
+    // set items to the main colour.
+    color: $main-colour !important;
+  }
+  .navbar__link {
+    // set links to be blocks underneath each other on smaller screens.
+    position: relative;
+    display: block;
+  }
+  @media (min-width: 767px) {
+    // position navigation links in navbar
+    .navbar__link {
+      position: absolute;
+      display: inline-block;
+    }
+    .navbar--link.navbar--previous {
+      left: 0;
+    }
+    .navbar__link.navbar--next {
+      right: 0;
+    }
+  }
+  .navbar__arrow {
+    // fix size and let the user know the arrow is clickable.
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .navbar__text {
+    // set navbar text size.
+    font-size: 14px;
+  }
+  // add margins to space out content.
+  .navbar--left {
+    margin-left: 15px
+  }
+  .navbar--right {
+    margin-right: 15px
+  }
+}
+
+@media (min-width: 767px) {
+  // on larger screens fix positioning of links.
+  .navbar {
+    text-align: left;
+  }
+}

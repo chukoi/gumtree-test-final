@@ -1,0 +1,14 @@
+/**
+ * main.scss
+ *
+ * @dateCreated 11/02/2018
+ * @author Dean Heffernan
+ */
+
+/* Component styles */
+@import "components/header";
+@import "components/content";
+@import "components/navbar";
+@import "components/panel";
+/* Container styles */
+@import "containers/app";

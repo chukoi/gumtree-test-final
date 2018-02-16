@@ -1,0 +1,21 @@
+/**
+ * _panel.scss
+ *
+ * @dateCreated 11/02/2018
+ * @author Dean Heffernan
+ */
+
+@media (min-width: 767px) {
+  .panel {
+    // set fixed width and center main panel on larger screens
+    width: 739px;
+    margin: 0 auto;
+  }
+}
+
+.panel {
+  // add box show to main panel
+  -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.05);
+  -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.05);
+  box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.05);
+}
